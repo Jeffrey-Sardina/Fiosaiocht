@@ -6,20 +6,17 @@
 ?>
 
 <html>
-    <!--Initialization-->
     <head>
-        <title>Home</title>
+        <title>Baile</title>
     </head>
-
-    <!--Webpage Elems-->
     <body>
-        <p>Creating a file!</p>
+        <p>Ag cruthú comhaid</p>
     </body>
 </html>
 
 <?php
-        $aschur = fopen("aschur.txt", "a") or die("Theip ar an comhad a oscailt!");
-        $eolas = "Seo é an comhad téaca atá scríofa ag index.php";
-        fwrite($aschur, $eolas . PHP_EOL);
-        fclose($aschur);
+    $aschur = fopen("aschur.txt", "a") or die("Theip ar an comhad a oscailt!");
+    $eolas = "Seo é an comhad téaca atá scríofa ag index.php";
+    fwrite($aschur, $eolas . PHP_EOL);
+    fclose($aschur);
 ?>
